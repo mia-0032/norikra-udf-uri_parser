@@ -6,6 +6,8 @@ This is [Norikra](http://norikra.github.io/) UDF.
 
 `splitquery` UDF return value corresponds to target key in query string like `hoge=foo`.
 
+[![Build Status](https://travis-ci.org/mia-0032/norikra-udf-uri_parser.svg)](https://travis-ci.org/mia-0032/norikra-udf-uri_parser)
+
 ## Installation
 
 Add this line to your application's Gemfile:
