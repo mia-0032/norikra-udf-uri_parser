@@ -4,7 +4,7 @@ require 'uri'
 
 java_package 'jp.ys.mia.norikra.udf'
 
-class SplitUri
+class UriParser
   @@elements = {
       :scheme => 0,
       :userinfo => 1,
@@ -16,7 +16,7 @@ class SplitUri
       :fragment => 8
   }
 
-  def self.execute(uri, element_key)
+  def self.split_uri(uri, element_key)
     element_key = element_key.to_sym
     unless @@elements.has_key?(element_key)
       return nil
@@ -35,10 +35,8 @@ class SplitUri
       result
     end
   end
-end
 
-class SplitQuery
-  def self.execute(query_text, key)
+  def self.split_query(query_text, key)
     query = CGI::parse(query_text)
 
     unless query.has_key?(key)

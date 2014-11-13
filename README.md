@@ -50,7 +50,7 @@ Second argument is the key that you want to get the value.
 
 ## TODO
 
-- Add method all query value as hash. (ex. `splitquery("foo=bar&buzz=123")` return `{"foo":"bar","buzz":123}`)
+- Add method returns all query value as hash. (ex. `splitquery("foo=bar&buzz=123")` return `{"foo":"bar","buzz":123}`)
 
 ## Contributing
 
