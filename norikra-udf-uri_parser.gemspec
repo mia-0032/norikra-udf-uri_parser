@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "norikra-udf-uri_parser"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Yoshihiro MIYAI"]
   spec.email         = ["msparrow17@gmail.com"]
   spec.summary       = %q{Norikra UDF splituri() and splitquery().}
